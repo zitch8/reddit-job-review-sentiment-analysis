@@ -3,10 +3,10 @@ from dotenv import load_dotenv
 
 import praw
 
-load_dotenv(dotenv_path = '../.env')
+
 
 def create_reddit_instance():
-    
+    load_dotenv(dotenv_path = '.env')
     reddit = praw.Reddit(
         client_id=os.getenv('REDDIT_CLIENT_ID'),
         client_secret=os.getenv('REDDIT_CLIENT_SECRET'),
@@ -14,3 +14,7 @@ def create_reddit_instance():
     )
 
     return reddit
+
+
+
+
