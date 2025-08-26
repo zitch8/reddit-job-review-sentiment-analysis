@@ -1,7 +1,7 @@
 
 def parse_companies(soup, url):
-    print("soup: ", soup)
     table = soup.find('table')
+
     if not table:
         print(f"No table found on the webpage: {url}")
         return []
