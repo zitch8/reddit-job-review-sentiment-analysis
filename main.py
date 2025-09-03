@@ -28,7 +28,12 @@ def main():
 
     # create CLI argument parser
     parser = argparse.ArgumentParser(description="Reddit and Web Scraper")
-    parser.add_argument("--web_parse", action="store_true", help="Run the web scraper")
+
+    parser.add_argument(
+        "--web_parse",
+        action="store_true",
+        help="Run the web scraper")
+    
     # parser.add_argument("--reddit_parse", action="store_true", help="Run the Reddit scraper")
     args = parser.parse_args()
 

@@ -9,11 +9,22 @@ def selenium_fetch(url, browser="chrome"):
     try:
         driver.get(url)
         driver.implicitly_wait(10)  # Wait for elements to load
-    
+
+        # BeautifulSoup object
         html = driver.page_source
-        driver.quit()
         soup = BeautifulSoup(html, 'html.parser')
-        return soup
+
+        # Parse with xpath based element
+        table = driver.find_element_by_xpath('/html/body/app-root/app-cms/div/div[4]/app-default-cms/div/div/div/div/div[2]/div/cms-content-viewer/div/cms-html-content-viewer/drag-scroll/div/div/div/div/div/table')
+        if not table:
+            print(f"No table found on the webpage: {url}")
+            return[]
+        
+        rows = table.find_elements_by_tag_name('tr')
+
+        driver.quit()
+        return rows
+        
     
     except Exception as e:
         print(f"Error fetching {url} with Selenium: {e}")

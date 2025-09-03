@@ -1,17 +1,9 @@
-
-def parse_companies(soup, url):
-    table = soup.find('table')
-
-    if not table:
-        print(f"No table found on the webpage: {url}")
-        return []
-    
-    rows = table.find_all('tr')
+def parse_companies(rows):
     companies = []
 
     for tr in rows[1:]:  # Skip the header row
         cols = tr.find_all('td')
-        rank = cols[0].text.strip()
+        rank = cols[0].text.strip() if cols else "N/A"
         company_name = cols[1].text.strip()
         address = cols[2].text.strip() if len(cols) > 2 else "N/A"
         companies.append({
@@ -21,3 +13,5 @@ def parse_companies(soup, url):
         })
 
     return companies
+
+    

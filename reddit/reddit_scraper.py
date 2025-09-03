@@ -4,7 +4,6 @@ from dotenv import load_dotenv
 import praw
 
 
-
 def create_reddit_instance():
     load_dotenv(dotenv_path = '.env')
     reddit = praw.Reddit(
