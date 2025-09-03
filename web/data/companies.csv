@@ -1,1 +1,103 @@
-rank,name,address
+rank,company name,address,lgu,industry,nature of business
+1,Manila Electric Co.,"Meralco Ortigas Center, Ortigas Avenue, Pasig City 1600 Metro Manila",Pasig City,Power Distributor,Manufacturing Sector
+2,"BDO Unibank, Inc.","7899 Makati Ave, Makati, 0726 Metro Manila",Makati City,Finance,Private Sector
+3,Petron Corp.,"358 Sen. Gil J. Puyat Ave, Makati, Metro Manila",Makati City,Petroleum,Manufacturing Sector
+4,"PMFTC, Inc.","12F Enterprise Center Tower1, Ayala Ave. cor. Paseo Ave. Makati, Philippines.",Makati City,Tobacco,Private Sector
+5,Mercury Drug Corp.,"7 Mercury Ave. cor. C. P. Garcia Ave., Bagumbayan, Quezon City, 1110 Metro Manila, Philippines.",Quezon City,Pharmaceutical,Manufacturing Sector
+6,Pilipinas Shell Petroleum Corp.,26th Street corner 9th Avenue Bonifacio Global City Brgy. Fort Bonifacio 1635 Taguig City Metro Manila Philippines,Taguig City,Petroleum,Manufacturing Sector
+7,"Nestle Philippines, Inc","31, Plaza Drive, Rockwell Center, Makati City 1200 Metro Manila",Makati City,Food & Beverage,Manufacturing Sector
+8,"Globe Telecom, Inc.","The Globe Tower, 32th Street corner 7th Avenue, Bonifacio Global City, Taguig City 1633 Metro Manila",Taguig  City,Telecommunication,Technology Sector
+9,"Puregold Price Club, Inc.","No. 900 D. Romualdez Street, Tabacalera Bldg., Paco, Manila, Philippines",Manila City,Retail,Private Sector
+10,Metropolitan Bank & Trust Co.,"Metrobank Plaza Senator Gil Puyat Avenue, Urdaneta Village Makati, Manila, 1200 Philippines",Makati City,Finance,Private Sector
+11,"Toshiba Information Equipment (Philippines), Inc.","103 East Main Ave. Ext., Special Export Processing Zone, Laguna Technopark, Binan, Laguna, Philippines","Binan, Laguna",Industrial,Technology Sector
+12,"TI (Philippines), Inc.","Baguio City export Processing Zone, Loakan. Road, Baguio City, Phils",Baguio,Tech Hardware & Semiconductors,Private Sector
+13,Philippine Associated Smelting And Refining Corp.,"11th Floor, Zuellig Building, Makati Avenue, corner Paseo de Roxas, Makati, 1225 Metro Manila",Makati City,Materials,Manufacturing Sector
+14,Bank Of The Philippine Islands,"6768 Ayala Ave, Legazpi Village, Makati, 1226 Metro Manila",Makati City,Finance,Private Sector
+15,"Smart Communications , Inc.","6799 Ayala Avenue, Makati City, Metro Manila",Makati City,Telecommunication,Technology Sector
+16,"San Miguel Brewery, Inc.","40 San Miguel Avenue, Mandaluyong City, 1550 Metro Manila, Philippines",Mandaluyong City,Beverage,Manufacturing Sector
+17,Universal Robina Corp.,"Tera Tower Bridgetowne E. Rodriguez Jr. Ave Ugong Norte, QC",Quezon City,Food,Manufacturing Sector
+18,"Toyota Motor Philippines, Corp.",Toyota Special Economic Zone Santa Rosa-Tagaytay Highway Sta Rosa City Laguna 4026,"Santa Rosa, Laguna",Automotive,Manufacturing Sector
+19,"PLDT, Inc.","Ramon Cojuangco Bldg., Makati Ave. cor Ayala Ave., Legazpi Village, Makati City Metro Manila, Philippines 1200.",Makati City,Telecommunication,Technology Sector
+20,"JT International (Philippines), Inc.","Penthouse, W Office Building 28th St. corner 11th Ave., Bonifacio Global City Taguig City",Taguig City,Tobacco,Private Sector
+21,Robinson'S Supermarket Corp.,"Robinsons Equitable Tower, ADB Avenue cor Poveda St., Ortigas Center, Pasig City, Metro Manila",Pasig City,Retail,Manufacturing Sector
+22,"Coca-Cola Beverages Philippines, Inc.","25/F Net Lima Bldg., 5th Ave. corner 26th St.,Bonifacio Global City, Taguig, Philippines (since 2013)",Taguig City,Beverage,Manufacturing Sector
+23,Landbank Of The Philippines,"24th Floor LandBank Plaza, 1598 M.H. del Pilar corner Dr. Quintos Sts., Malate, Manila",Manila City,Finance,Private Sector
+24,Zuellig Pharma Corp.,"5/F, Zuellig Pharma Building, Km 14, West Service Road, South Luzon Expressway, Paranaque City 1700 Metro Manila",Parañaque City,Healthcare,Manufacturing Sector
+25,"Accenture, Inc.","Makati Stock Exchange Building, Ayala Ave, Makati, 1200 Metro Manila",Makati City,Business Processing Outsourcing,Technology Sector
+26,"Epson Precision (Philippines), Inc.","8th floor Anson's Centre, 23 ADB Avenue, Ortigas Center Pasig City 1605, Philippines",Pasig City,Tech Hardware & Semiconductors,Technology Sector
+27,Security Bank Corp.,"6776 Ayala Avenue, Makati City",Makati City,Finance,Financial Sector
+28,"Supervalue, Inc.","SM Corporate Offices, Bldg. E, 1000 Bay Blvd., SM Central Business Park Bay City, Pasay City",Pasay City,Retail,Private Sector
+29,"Philippine Airlines, Inc","PNB Financial Center, Pres. Diosdado Macapagal Avenue, Pasay City, Metro Manila",Pasay City,Aviation,Service Sector
+30,Philippine National Bank,"PNB Financial Center, G/F Pres, Diosdado Macapagal Blvd, Pasay, 1300 Metro Manila",Pasay City,Finance,Private Sector
+31,"STMicroelectronics, Inc.","Light Industry and Science Park II, ST-Ericsson, 9 Mountain Dr, Calamba, 4026 Laguna","Calamba, Laguna",Industrial,Manufacturing Sector
+32,Monde Nissin Corp.,"22F, 6750 Ayala Ave, Makati, 1224 Metro Manila",Makati City,Food & Beverages,Industrial Sector
+33,"Procter &Gamble Philippines, Inc.","11F, Seven/NEO, 5th Ave, Taguig, 1634 Metro Manila",Taguig City,Consumer Staple Products,Consumer Staples Sector
+34,"Chevron Philippines, Inc.","No 6/F, 6750 Ayala Avenue, Makati City 1226, Philippines",Makati City,Energy,Manufacturing Sector
+35,China Banking Corp.,"China Bank Building, 8745 Paseo de Roxas corner Villar Street, Makati City 1226",Makati City,Finance,Financial Sector
+36,National Grid Corp. Of The Philippines,"NGCP Building Quezon Avenue, Corner BIR Rd, Diliman, Quezon City, 1100",Quezon City,Energy,Energy And Power
+37,Zenith Foods Corp.,"103 Prosperity Ave, Calamba, 4027 Laguna*",Laguna,Food,Consumer Staples Sector
+38,Rizal Commercial Banking Corp.,"Yuchengco Tower, RCBC Plaza 6819 Ayala Avenue, Makati City 0727",Makati City,Finance,Financial Sector
+39,"Unioil Petroleum Philippines, Inc.","38th and 39th Floor., Exquadra Tower, #1 Jade Drive, Ortigas Center, San Antonio, Pasig City 1600, Philippines",Pasig City,Petroleum,Industrial Sector
+40,House Technology Industries Pte Ltd,"House Tech Building, Fifth Street, Cavite Economic Zone Phase 4, Rosario, Cavite","Rosario, Cavite","Appliances, Electrical And  Electronic Manufacturing",Retail Sector
+41,Philippine Seven Corp,"7/F The Columbia Tower Ortigas Ave Mandaluyong City Metro Manila, 1550 Philippines",Mandaluyong City,Retail & Wholesale,Consumer Staples Sector
+42,"SM Prime Holdings, Inc.","Mall of Asia Arena Annex Building, Coral Way cor. J.W. Diokno Blvd., Mall of Asia Complex, Brgy. 76, Zone 10, CBP-1A, 1300 Pasay City",Pasay City,Conglomerate,Real Estate Sector
+43,Union Bank Of The Philippines,"Meralco Avenue UnionBank Plaza Bldg,corner, Onyx St, Pasig, 1605",Pasig City,Finance,Finance Sector
+44,"Sun Life Of Canada (Philippines), Inc.","2/F Sun Life Centre, 5th Avenue corner Rizal Drive, Bonifacio Global City, Taguig City 1634.",Taguig City,Insurance,Finance Sector
+45,San Miguel Energy Corp.,"40 San Miguel Avenue, Mandaluyong, Metro Manila, Philippines",Mandaluyong City,Energy,Energy And Power Sector
+46,Samsung Electro-Mechanics Philippines Corp.,"Block 5 & 6, Calamba Premiere International Park, Barangay Batino, Prinza Calamba, Laguna, 4027 Philippines","Calamba, Laguna",Industral Products,Industrial Sector
+47,"P-H-O-E-N-I-X Petroleum Philippines, Inc.","Davao Head Office: Phoenix Bulk Depot, Lanang, Davao City 8000",Davao City,Oil / Petroleum,Industrial Sector
+48,HGST Philippines Corp.,"109 Technology Ave, Laguna Technopark, Biñan, Laguna*",Laguna,Tech Hardware & Semiconductors,Technology Sector
+49,"Century Pacific Food, Inc.","7F, 8F, & 19F Centerpoint Building Julia Vargas corner Garnet Street Ortigas Business Center, Pasig City Metro Manila, 1605",Pasig City,Food,Industrial Sector
+50,"Ayala Land, Inc.","Tower One & Exchange Plaza, Ayala Triangle, Ayala Avenue, Makati City, Metro Manila 1226",Makati City,Real Estate,Real Estate Sector
+51,Samsung Electronic Philippines Corp.,"Blk 6 Calamba Premiere International Park Batino Calamba, Laguna Philippines","Calamba, Laguna",Industrial,Technology Sector
+52,"Watsons Personal Care Stores (Philippines), Inc.","9F West Quadrant, One E-Com Center, Ocean Drive, Mall of Asia Complex CBP-IA Zone 10 Barangay 76, Pasay City NCR Fourth District, Philippines 1300*",Pasay City,Healthcare,Healthcare Sector
+53,"Huawei Technologies Phils., Inc.","53/F, PBCOM Tower, Ayala Avenue, cor. V.A. Rufino Street, Makati City 1227",Makati City,Tech Hardware & Semiconductors,Information And Communications Technology
+54,Dyson Electronics Pte. Ltd.,"54FC+X53, Calamba, 4027 Laguna","Calamba, Laguna",Industrial,Manufacturing Sector
+55,East West Banking Corp.,"The Beaufort, 5th Avenue corner 23rd Street, Bonifacio Global City, Taguig 1634",Taguig City,Finance,Finance Sector
+56,American Power Conversion Corp. (A.P.C.)B.V,"Unit 801, World Plaza Block 5 Lot 4, Crescent Park West, 5th Avenue, Bonifacio Global City, Taguig City 1634",Taguig City,Energy,Energy And Power Sector
+57,"Ginebra San Miguel, Inc.","GINEBRA SAN MIGUEL INC. 3rd, 5th & 6th Floors, San Miguel Properties Centre St. Francis Street, Ortigas Center, Mandaluyong City, 1550 Metro Manila",Mandaluyong City,"Food, Beverage, & Tobacco",Manufacturing Sector
+58,Innove Communications. Inc.,"4/F, Globe Telecom Plaza 1, Pioneer cor. Madison Sts., Mandaluyong City",Mandaluyong City,Telecommunication,Information And Communications Technology
+59,Philippine AXA Life Insurance Corp.,"Philippine AXA Life Centre Sen Gil Puyat Avenue Makati City, 1200 Philippines",Makati City,Insurance,Finance Sector
+60,Pru Life Insurance Corp. Of U.K,"9/F Uptown Place Tower 1, 1 East 11th Drive, Uptown Bonifacio, Taguig City 1634",Taguig City,Insurance,Finance Sector
+61,Makati Development Corp.,"MDC Corporate Center, Radian Street, Arca South Estate, Western Bicutan, Taguig City 1630",Taguig City,Material And Construction,Industrial Sector
+62,Steelasia Manufacturing Corp.,"25th Floor, Ore Central Tower, 31st Street, corner 9th Ave, Taguig, Metro Manila",Taguig City,Materials,Industrial Sector
+63,"Metro Drug, Inc.","Sta. Rosa Estate, Brgy. Macabling, Sta. Rosa, Laguna","Santa Rosa, Laguna",Pharmaceutical,Healthcare Sector
+64,South Premier Power Corp.,"808 Bldg., Meralco Ave. Ortigas Center, Pasig, Metro Manila",Pasig City,Energy,Energy And Power Sector
+65,Development Bank Of The Philippines,"Sen. Gil J. Puyat Avenue corner Makati Avenue, Makati City",Makati City,Finance,Finance Sector
+66,Yamaha Motor Philippines Inc.,"Lots 1&2, Block 17, Phase I, LIMA Technology Center, Malvar, Batangas","Malvar, Batangas",Automotive,Industrial Sector
+67,"Metro Retail Stores Group, Inc.","Vicsal Building Corner C.D. Seno and W.O. Seno Streets, Barangay Guizo, Mandaue City, Cebu, 6014","Mandaue City, Cebu",Retail & Wholesale,Manufacturing Sector
+68,Ecossential Foods Corp.,"No. 48, Warehouse 4A Ignacio Complex, Eulogio Amang Rodriguez Ave, Pasig, 1611 Metro Manila??",Pasig City,Food & Beverages,Manufacturing Sector
+69,Filoil Logistics Corp.,"1634 11th Dr, Taguig, Metro Manila",Taguig City,Energy,Energy And Power Sector
+70,"Maynilad Water Services, Inc.","MWSS Complex, Katipunan Avenue, Balara Quezon City, 1105",Quezon City,Water,Waste And Water Service Provider
+71,"Pepsi-Cola Products Philippines, Inc.","26th Floor Axis Tower 2, Northgate Filinvest Alabang, Muntinlupa, Metro Manila",Muntinlupa City,Food & Beverages,Food Sector
+72,"Philippine American Life And General Insurance (Philam Life) Co.,","AIA Philippines Head Office, 16F-18F Six/NEO Building, 5th Avenue corner 26th Street, Bonifacio Global City, Taguig
+Metro Manila 1634",Taguig City,Insurance,Finance Sector
+73,Familyhealth And Beauty Corp.,"9F West Quadrant, One E-Com Center, Ocean Drive, Mall of Asia Complex CBP-IA Zone 10 Barangay 76, Pasay City NCR Fourth District, Philippines 1300",Pasay City,Healthcare,Healthcare Sector
+74,Jollibee Foods Corp.,"10/F Jollibee Plaza Building, Emerald Ave., Ortigas Center, Pasig City",Pasig City,Pasig,Food Sector
+75,Energy Development Corp.,"Rockwell Business Center Tower 3, Ortigas Avenue, Pasig City, 1604",Pasig City,Energy,Energy And Power Sector
+76,First Gas Power Corp.,"3/F Benpres Bldg., Exchange Road cor. Meralco Ave., Ortigas Center, , NCR, Pasig City, Metro Manila, Philippines",Pasig City,Energy,Energy And Power Sector
+77,"Emperador Distillers, Inc.","7/F 1880 Building, Eastwood Avenue, Eastwood City, 1110 Eulogio Rodriguez Jr. Ave, Bagumbayan, Quezon City",Quezon City,Beverage,Manufacturing Sector
+78,Waltermart Supermarket Inc.,"WalterMart Building 8001-A North Edsa, Veterans Village, Quezon City",Quezon City,Retail & Wholesale,Manufacturing Sector
+79,San Miguel Corp.,"SAN MIGUEL CORPORATION, 40 San Miguel Avenue, Mandaluyong City 1550",Mandaluyong City,Energy,Energy And Power Sector
+80,"Manila Water Co., Inc.","MWSS Administration Building, 489 Katipunan Road, Balara, Quezon City, Philippines 1105",Quezon City,Water,Waste And Water Service Provider
+81,"Pure-Foods Hormel Co., Inc., The","21/F JMT Corporate Condominum ADB Avenue, Ortigas Centre, Pasig City",Pasig City,Food & Beverages,Technology Sector
+82,Lazada E-Services Philippines Inc.,"Marajo Tower, 312 4th Ave, Taguig, 1434 Metro Manila",Taguig City,E-Commerce,Information And Communications Technology
+83,"International Container Services, Inc.","ICTSI Administration Building, Manila International Container Terminal (MICT), South Access Road, Port of Manila, Manila 1012",Manila City,Port Operator,Transportation Sector
+84,"Holcim Philippines, Inc.","7/F Two World Square, McKinley Hill, Fort Bonifacio, Taguig City 1634",Taguig City,Materials,Industrial Sector
+85,"ROHM Electronics Philippines,Inc.","Block 3 and Block 5, People's Avenue, People's Technology Complex Special Economic Zone, Carmona, Cavite 4116","Carmona, Cavite",Semiconductor,Energy And Power Sector
+86,SMC Global Power Holdings Corp.,"5th Floor, C5 Office Building Complex,100 E. Rodriguez Jr. Ave., C5 Road, Ugong, Pasig City, 1604",Pasig City,Energy,Energy And Power Sector
+87,"Cargill Philippines, Inc.","Cargill Philippines, Inc. Headquarters, 26th Floor, W Building, 5th Avenue corner 32nd Street, Bonifacio Global City, Taguig City",Taguig City,Food,Financial And Agricultural Sector
+88,"Cebu Air, Inc.","Cebu Pacific Building, Domestic Road, Barangay 191, Zone 20, Pasay City",Pasay City,Aviation,Service Sector
+89,Robinsons Land Corp.,"Robinsons Land Corporation, Level 2, Galleria Corporate Center EDSA corner Ortigas Avenue 1100 Quezon City",Quezon City,Real Estate,Real Estate Sector
+90,"Mitsubishi Motors Philippines Corp,","No. 1 Auto Park Ave., Greenfield Automotive Park Special Economic Zone, Santa Rosa, Laguna, Philippines","Santa Rosa, Laguna",Automotive,Automotive Sector
+91,"Rustan Supercenters, Inc.","5th Floor Morning Star Center, 347 Sen. Gil Puyat Ave., Makati, 1209",Makati City,Retail & Wholesale,Manufacturing Sector
+92,Amkor Technology Philippines Inc.,"P1 - Km 22 East Service Road Cupang, Muntinlupa P3 - 119 North Science Ave. SEPZ, Laguna Technopark, Binan, laguna 53B Muntinlupa City (both factories)*",Laguna,Semiconductor,Technology Sector
+93,Philip Morris Philippines Manufacturing Inc.,"27/F, The Enterprise Center, 6762 Ayala Corner Paseo De Roxas, Makati City 1200",Makati City,Tobacco,Manufacturing Sector
+94,"Continental Temic Electronics (Phils), Inc.","Temic Bldg., Bagsakan Road, FTI SEZ, Taguig`",Taguig City,Consumer Discretionary Products,Manufacturing Sector
+95,Semirara Mining And Power Corp.,"2nd Floor DMCI Plaza, 2281 Don Chino Roces Avenue, Makati City 1231",Makati City,Mining,Energy And Power Sector
+96,Wilcon Depot Inc.,"90 Eulogio Rodriguez Jr. Ave, Murphy, Quezon City, 1110 Metro Manila",Quezon City,Construction Materials,Retail
+97,"VST ECS Phils, Inc.","MSI-ECS Complex, M. Eusebio Avenue San Miguel, Pasig City, Metro Manila 1600",Pasig City,Tech Hardware & Semiconductors,Information And Communications Technology Sector
+98,"Foodsphere, Inc.","560 West Service Rd Paso De Blas, Valenzuela City 1442 (CDO Foodsphere)",Valenzuela City,Food & Beverages,Retail
+99,"Unahco, Inc.","17 Sheridan St., Mandaluyong City",Mandaluyong City,Healthcare,Healthcare Sector
+100,"Manufacturers Life Insurance Co. (Phils), Inc., The","10th Floor NEX Tower, 6786 Ayala Avenue, Makati City, 1229",Makati City,Insurance,Finance Sector
+,,,,,
