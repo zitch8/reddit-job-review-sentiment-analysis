@@ -1,6 +1,7 @@
-[{
-    "name" : "Makati Government",
-    "url" : "https://www.makati.gov.ph/cms/business/top-100-corporations/2261?content=4721",
-    "category": "top 100 corporations",
-    "source": "government"
-}]
+[
+    {
+        "name" : "Makati Government",
+        "url" : "https://www.makati.gov.ph/cms/business/top-100-corporations/2261?content=4721",
+        "xpath": "/html/body/app-root/app-cms/div/div[4]/app-default-cms/div/div/div/div/div[2]/div/cms-content-viewer/div/cms-html-content-viewer/drag-scroll/div/div/div/div/div/table"
+    }
+]

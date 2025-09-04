@@ -1,33 +1,38 @@
-from pathlib import Path
 import argparse
-from web.web_scraper import fetcher as web_fetcher, parser as web_parser, writer as web_writer, web_driver
+import logging
 
-# set base directory
+from pathlib import Path
+from web import driver, parser, writer
+from web.data import fetcher
+
 BASE_DIR = Path(__file__).resolve().parent
-print("base: " + str(BASE_DIR))
+CONFIG_FILE = BASE_DIR / "config.yaml"
 
-# set csv data directory
-COMPANY_CSV = BASE_DIR / "web" / "data" / "companies.csv"
-# print("compnay_csv " + COMPANY_CSV)
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
+# Set web data directory
+WEB_DATA_DIR = BASE_DIR / "web" / "data"
+
+COMPANY_CSV = BASE_DIR / WEB_DATA_DIR / "companies.csv"
+WEB_JSON = BASE_DIR / WEB_DATA_DIR / "company_web.json"
 
 def run_web_scraper():
 
     url = "https://www.makati.gov.ph/cms/business/top-100-corporations/2261?content=4721"
     table_xpath = '/html/body/app-root/app-cms/div/div[4]/app-default-cms/div/div/div/div/div[2]/div/cms-content-viewer/div/cms-html-content-viewer/drag-scroll/div/div/div/div/div/table'
     
-    driver = web_driver.get_driver(browser="chrome", headless=False)
-    table_fetch = web_fetcher.selenium_fetch(driver, url, table_xpath)
-    table_contents, headers = web_parser.parse_companies(table_fetch)
-    print(headers)
+    web_driver = driver.get_driver(browser="chrome", headless=True)
+    table_fetch = fetcher.selenium_fetch_table(web_driver, url, table_xpath)
+    table_contents, headers = parser.parse_companies(table_fetch)
 
     # CSV Write
-    web_writer.write_to_csv(
+    writer.write_to_csv(
         COMPANY_CSV, 
         table_contents, 
         headers
     )
 
-    driver.quit()
+    web_driver.quit()
 
 
 def main():
