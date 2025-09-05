@@ -1,9 +1,9 @@
 
-from web_scraper import WebScraper
-from driver_manager import WebDriverManager
-from fetcher import SeleniumFetcher, HTMLFetcher
-from parser import TableParser
-from writer import CSVWriter
+from .web_scraper import WebScraper
+from .driver_manager import WebDriverManager
+from .fetcher import SeleniumFetcher, HTMLFetcher
+from .parser import TableParser
+from .writer import CSVWriter
 
 
 """

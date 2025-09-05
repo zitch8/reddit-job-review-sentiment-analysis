@@ -1,9 +1,9 @@
 import logging
 
-from driver_manager import WebDriverManager
-from fetcher import DataFetcher
-from parser import DataParser
-from writer import DataWriter
+from .driver_manager import WebDriverManager
+from .fetcher import DataFetcher
+from .parser import DataParser
+from .writer import DataWriter
 
 class WebScraper:
     """
@@ -24,7 +24,7 @@ class WebScraper:
 
     def scrape_table(self, 
                      url: str, 
-                     table_xpath: str, 
+                     element_path: tuple, 
                      output_file: str, 
                      timeout: int = 15) -> bool:
         
@@ -33,7 +33,7 @@ class WebScraper:
 
         Args:
             url (str): The URL to scrape.
-            table_xpath (str): The XPath to locate the table element.
+            element_path (tuple): The XPath to locate the table element.
             output_file (str): The path to the output file.
             parser_kwargs (dict): Additional arguments for the writer.
         """
@@ -42,7 +42,7 @@ class WebScraper:
             logging.info(f"Starting scrape for {url}")
 
             # Fetch data
-            raw_data = self.fetcher.fetch(url, table_xpath, timeout=timeout)
+            raw_data = self.fetcher.fetch(url, element_path, timeout=timeout)
             if raw_data is None:
                 logging.error(f"Failed to fetch data from {url}")
                 return False
@@ -61,3 +61,9 @@ class WebScraper:
         except Exception as e:
             logging.exception(f"Error during scraping {url}: {e}")
             return False
+    def __enter__(self):
+        return self
+    
+    def __exit__(self, exc_type, exc_value, traceback):
+        if self.driver_manager:
+            self.driver_manager.quit_driver()

@@ -1,4 +1,5 @@
 from selenium import webdriver
+import logging
 
 # Chrome
 from selenium.webdriver.chrome.service import Service as ChromeService
@@ -33,6 +34,8 @@ class WebDriverManager:
         """
         if self._driver is None:
             self._driver = self._create_driver()
+
+        logging.info(f"{self._driver} WebDriver initialized.")
         return self._driver
 
     def _create_driver(self):
@@ -41,17 +44,17 @@ class WebDriverManager:
         """
         
         if self.browser == 'chrome':
-            self._driver = self._init_chrome_driver()
+            return self._init_chrome_driver()
 
         elif self.browser == 'firefox':
-            self._driver = self._init_firefox_driver()
+            return self._init_firefox_driver()
 
         elif self.browser == 'edge':
-            self._driver = self._init_edge_driver()
+            return self._init_edge_driver()
 
         else:
             raise ValueError(f"Browser '{self.browser}' is not supported.")
-        
+    
     def _init_chrome_driver(self):
         options = ChromeOptions()
         if self.headless:

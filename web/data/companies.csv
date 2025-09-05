@@ -1,4 +1,5 @@
-rank,company name,address,lgu,industry,nature of business
+column_0,column_1,column_2,column_3,column_4,column_5
+column_0,column_1,column_2,column_3,column_4,column_5
 1,Manila Electric Co.,"Meralco Ortigas Center, Ortigas Avenue, Pasig City 1600 Metro Manila",Pasig City,Power Distributor,Manufacturing Sector
 2,"BDO Unibank, Inc.","7899 Makati Ave, Makati, 0726 Metro Manila",Makati City,Finance,Private Sector
 3,Petron Corp.,"358 Sen. Gil J. Puyat Ave, Makati, Metro Manila",Makati City,Petroleum,Manufacturing Sector

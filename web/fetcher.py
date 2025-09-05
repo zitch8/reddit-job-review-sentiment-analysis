@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-from driver_manager import WebDriverManager
+from .driver_manager import WebDriverManager
 
 class DataFetcher(ABC):
     """
@@ -49,7 +49,7 @@ class SeleniumFetcher(DataFetcher):
     """
 
     def __init__(self, driver_manager: WebDriverManager):
-        self.driver = driver_manager
+        self.driver_manager = driver_manager
 
     def fetch(self, url: str, element_path: tuple, **kwargs) -> Any:
         """ 
@@ -62,13 +62,13 @@ class SeleniumFetcher(DataFetcher):
 
         """
 
-        driver = self.driver.get_driver()
+        driver = self.driver_manager.get_driver()
         
         try:
             driver.get(url)
 
-            element = WebDriverWait(self.driver, kwargs).until(
-                EC.presence_of_element_located((element_path))
+            element = WebDriverWait(driver, **kwargs).until(
+                EC.presence_of_element_located(element_path)
             )
             
             return element

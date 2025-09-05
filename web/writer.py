@@ -1,5 +1,7 @@
 from abc import ABC, abstractmethod
 from typing import Any, List, Dict
+
+import logging
 import os
 import csv
 
@@ -44,6 +46,6 @@ class CSVWriter(DataWriter):
             logging.info(f"Data written to {filename} successfully.")
 
         except Exception as e:
-            import logging
+
             logging.error(f"Error writing to {filename}: {e}")
     
