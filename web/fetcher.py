@@ -22,7 +22,6 @@ class DataFetcher(ABC):
         pass
 
 class HTMLFetcher(DataFetcher):
-
     """
     For static HTML content using requests.
     """
@@ -54,7 +53,6 @@ class SeleniumFetcher(DataFetcher):
         self.driver = driver_manager
 
     def fetch(self, url: str, element_path: tuple, **kwargs) -> Any:
-
         """ 
         Fetch element using Selenium. 
 
@@ -77,4 +75,4 @@ class SeleniumFetcher(DataFetcher):
         
         except Exception as e:
             logging.error(f"Error fetching {url} with Selenium: {e}")
-            return []
+            return None

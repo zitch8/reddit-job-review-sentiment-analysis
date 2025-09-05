@@ -6,36 +6,6 @@ import logging
 
 from abc import ABC, abstractmethod
 
-def parse_companies(table):
-    companies = []
-    headers = []
-
-    web_table_rows = table.find_elements(By.TAG_NAME, 'tr')
-
-    # Extract headers from the first row
-    header_cols = web_table_rows[0].find_elements(By.TAG_NAME, 'th')
-    if not header_cols:
-        header_cols = web_table_rows[0].find_elements(By.TAG_NAME, 'td')
-    headers = [col.text.strip().lower() for col in header_cols]
-
-    for tr in web_table_rows[1:]:  # Skip the header row
-        content_cols = tr.find_elements(By.TAG_NAME, 'td')
-        company_details = {}
-
-        for i, col in enumerate(content_cols):
-
-            # Key assignment with fallback
-            if i < len(headers):
-                key = headers[i]
-            else:
-                key = f"column_{i}"
-            
-            company_details[key] = col.text.strip()
-        companies.append(company_details)
-
-    return companies, headers
-
-
 class DataParser(ABC):
     """
     Abstract base class for data parsing implementations.
@@ -47,7 +17,7 @@ class DataParser(ABC):
         pass
 
 
-class ElementParser(DataParser):
+class TableParser(DataParser):
     """
     Parse HTML element data into structured format.
     """
@@ -62,13 +32,10 @@ class ElementParser(DataParser):
         Returns:
             Tuple of (List of row data with their respective header key, headers)
         """
-
-        self.table = table
-
         rows = table.find_elements(By.TAG_NAME, 'tr')
 
         if not rows:
-            logging.error("No rows found in the table.")
+            logging.error("No rows found in the element.")
             return [], []
         
         # Extract headers
@@ -78,6 +45,9 @@ class ElementParser(DataParser):
         parsed_data = []
         for row in rows[1:]:
             row_data = self._parse_row(row, headers)
+            parsed_data.append(row_data)
+
+        return parsed_data, headers
 
 
     def _extract_headers(self, header_row) -> List[str]:
