@@ -2,7 +2,7 @@ import logging
 from pathlib import Path
 import os
 
-class Logging:
+class LogManager:
     """
     Logging configuration
     """
@@ -17,7 +17,7 @@ class Logging:
             cls._instance = super().__new__(cls)
 
         log_path = base_dir / "logs"
-        log_path.mkdir(parents=True, exist_ok=True)
+        os.mkdir(log_path, exist_ok=True)
 
         # Configure root logger
         cls._instance.logger = logging.getLogger(log_name)

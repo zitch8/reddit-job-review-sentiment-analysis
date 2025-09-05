@@ -5,7 +5,6 @@ import requests
 import logging
 
 from bs4 import BeautifulSoup
-from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
@@ -63,7 +62,8 @@ class SeleniumFetcher(DataFetcher):
 
         """
 
-        driver = WebDriverManager.get_driver()
+        driver = self.driver.get_driver()
+        
         try:
             driver.get(url)
 
@@ -74,5 +74,5 @@ class SeleniumFetcher(DataFetcher):
             return element
         
         except Exception as e:
-            logging.error(f"Error fetching {url} with Selenium: {e}")
+            logging.exception(f"Error fetching {url} with Selenium: {e}")
             return None

@@ -16,36 +16,50 @@ class WebScraper:
                  parser: DataParser = None,
                  writer: DataWriter = None):
         
+        self.logging = logging.getLogger(__name__)
+        self.driver_manager = driver_manager
         self.fetcher = fetcher
         self.parser = parser
         self.writer = writer
 
-    def scrape(self, url: str, output_file: str, fetcher_kwargs: dict, writer_kwargs: dict) -> None:
+    def scrape_table(self, 
+                     url: str, 
+                     table_xpath: str, 
+                     output_file: str, 
+                     timeout: int = 15) -> bool:
+        
         """
         Main method to perform scraping.
 
         Args:
             url (str): The URL to scrape.
+            table_xpath (str): The XPath to locate the table element.
             output_file (str): The path to the output file.
-            fetcher_kwargs (dict): Additional arguments for the fetcher.
-            writer_kwargs (dict): Additional arguments for the writer.
+            parser_kwargs (dict): Additional arguments for the writer.
         """
+        try:
 
-        logging.info(f"Starting scrape for {url}")
+            logging.info(f"Starting scrape for {url}")
 
-        # Fetch data
-        raw_data = self.fetcher.fetch(url, **fetcher_kwargs)
-        if raw_data is None:
-            logging.error(f"Failed to fetch data from {url}")
-            return
+            # Fetch data
+            raw_data = self.fetcher.fetch(url, table_xpath, timeout=timeout)
+            if raw_data is None:
+                logging.error(f"Failed to fetch data from {url}")
+                return False
 
-        # Parse data
-        structured_data, headers = self.parser.parse(raw_data)
-        if not structured_data:
-            logging.warning(f"No data parsed from {url}")
-            return
+            # Parse data
+            structured_data, headers = self.parser.parse(raw_data)
+            if not structured_data:
+                logging.warning(f"No data parsed from {url}")
+                return False
 
-        # Write data
-        self.writer.write(output_file, structured_data, headers, **writer_kwargs)
+            # Write data
+            self.writer.write(output_file, structured_data, headers)
 
-        logging.info(f"Scraping completed for {url}, data written to {output_file}")
+            logging.info(f"Scraping completed for {url}, data written to {output_file}")
+            return True
+        except Exception as e:
+            logging.exception(f"Error during scraping {url}: {e}")
+            return False
+
+

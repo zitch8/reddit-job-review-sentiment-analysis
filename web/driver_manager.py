@@ -24,7 +24,7 @@ class WebDriverManager:
         self.headless = headless
         self._driver = None
 
-        if self.browswer not in self.SUPPORTED_BROWSERS:
+        if self.browser not in self.SUPPORTED_BROWSERS:
             raise ValueError(f"Browser '{self.browser}' is not supported.")
 
     def get_driver(self):

@@ -12,7 +12,7 @@ class DataWriter(ABC):
 
 class CSVWriter(DataWriter):
     """
-    Write data to a CSV file.
+    Write data to CSV.
     """
     def __init__(self, append_mode: bool = True):
         self.append_mode = append_mode
@@ -46,3 +46,4 @@ class CSVWriter(DataWriter):
         except Exception as e:
             import logging
             logging.error(f"Error writing to {filename}: {e}")
+    
