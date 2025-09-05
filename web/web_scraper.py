@@ -61,5 +61,3 @@ class WebScraper:
         except Exception as e:
             logging.exception(f"Error during scraping {url}: {e}")
             return False
-
-
