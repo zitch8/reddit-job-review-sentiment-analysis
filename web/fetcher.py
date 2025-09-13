@@ -71,6 +71,7 @@ class SeleniumFetcher(DataFetcher):
                 EC.presence_of_element_located(element_path)
             )
             
+            logging.info(f"element {element} found")
             return element
         
         except Exception as e:

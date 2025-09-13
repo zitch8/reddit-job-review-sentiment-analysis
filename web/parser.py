@@ -45,7 +45,8 @@ class TableParser(DataParser):
         parsed_data = []
         for row in rows[1:]:
             row_data = self._parse_row(row, headers)
-            parsed_data.append(row_data)
+            if row_data:
+                parsed_data.append(row_data)
 
         return parsed_data, headers
 
@@ -54,23 +55,16 @@ class TableParser(DataParser):
         """ 
         Extract headers from the header row. 
         """
-
-        headers = []
-
         header_cols = header_row.find_elements(By.TAG_NAME, 'th')
 
         # Create custom header if no th found
         if not header_cols:
-            logging.info("No table header, will create custom header")
             header_cols = header_row.find_elements(By.TAG_NAME, 'td')
-            for i in range(len(header_cols)):
-                headers.append(f"column_{i}")
-                
-            return headers
         
-        for col in header_cols:
+        headers = []
+        for i, col in enumerate(header_cols):
             # Remove special characters or spaces
-            header_text = col.text.strip().lower()
+            header_text = col.text.strip() or f"column_{i}"
             clean_header = "".join(c if c.isalnum() else '_' for c in header_text)
             headers.append(clean_header)
 
@@ -82,10 +76,14 @@ class TableParser(DataParser):
         """
 
         content_cols = row.find_elements(By.TAG_NAME, 'td')
-        row_data = {}
 
+        if not content_cols:
+            logging.warning("Skipping row with no data columns.")
+            return {}
+        
+        row_data = {}
         for i, col in enumerate(content_cols):
-            key = headers[i]
+            key = headers[i] if i < len(headers) else f"column_{i}"
             row_data[key] = col.text.strip()
 
         return row_data

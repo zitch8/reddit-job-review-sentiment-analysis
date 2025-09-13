@@ -36,7 +36,6 @@ class CSVWriter(DataWriter):
         try:
             with open(filename, mode=mode, newline='', encoding='utf-8') as csvfile:
                 writer = csv.DictWriter(csvfile, fieldnames=headers)
-                writer.writeheader()
 
                 if mode == "w" or not file_exists:
                     writer.writeheader()
